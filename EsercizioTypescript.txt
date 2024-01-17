@@ -1,0 +1,39 @@
+Spiegazione generica (Cos'è, a cosa serve, che problema risolve, differenze con JS semplice):
+	TypeScript estende le funzionalità di JavaScript aggiungendo la possibilità di definire tipi statici.
+	Serve per migliorare la scalabilità del codice JavaScript attraverso l'aggiunta di un sistema di tipizzazione
+	offrendo una maggiore chiarezza nel codice e individuando errori più facilmente durante la fase di sviluppo.
+	TypeScript permette di catturare troppi errori durante la fase di sviluppo piu' facilmente individuabili e correggibili rispetto JS
+	le varie differenze tra TS e JS sono:
+		TS ha una tipizzazione statica mentre JS dinamica
+		TS supporta le interfacce a differenza di JS
+		TS e' compilato
+
+Il compilatore TS (perché è necessario? e come si usa?)
+	TS richiede un passaggio ulteriore rispetto JS, i browser interpetra solo JS, per questo il compilatore si occupa di tradurre il codice in JS
+	Il compilatore si installa installando TS nella propria macchina con 'npm i -g ts'
+	e il file viene compilato con il comando 'tsc nomedelfile.ts'
+	
+La Type Inference
+	La Type Inference è una caratteristica di TypeScript che consente al compilatore di dedurre automaticamente i tipi delle variabili in base al loro utilizzo nel codice
+
+Il tipo ‘any’
+	Il tipo any e' utilizzata per variabili di cui non si conosce il tipo, puo contenre qualsiasi tipo di valore questo pero' se usato in malo modo annulla gran parte della tipizzazione fornita da TS
+
+Il tipo Union
+	Il tipo union e' utilizzato per assegnare a una variabile 2 tipologia di dati con l'operatore pipe | si possono combinare i tipi desiderati 
+
+Il tipo Tuple
+	Il tipo tuple e' utilizzato per rappresentare un array di elementi dove lunghezza e tipologia sono fissati in maniera definita
+
+Le Interfaces in TS
+	Le interfacce sono usate per dichiarare strutture di un oggetto, inclusi tipi e metodi, servono per riutilizzare il codice e una variabile puo estendere piu' interfacce
+
+Types vs Interfaces
+	Le differenze principali tra tipo e interfacce in ts sono le seguenti:
+		interfaces serve per definire nuovi oggetti, mentre tipo per creare variabili con tipi gia' esistenti
+		interface consente l'ereditarieta'
+		interface puo' essere esteso a differenzxa di tipo
+	si usa type quando hai bisogno di creare variabili di tipi gia' esistenti mentre si usa interface quando vuoi creare un oggetto con la struttura decisa da te
+
+I Generics
+	I Generics consentono di creare componenti riutilizzabili che lavorano con vari tipi di dati, rendono il codice piu' flessibile
